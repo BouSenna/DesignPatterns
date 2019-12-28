@@ -1,11 +1,16 @@
 package StrategyDesignPattern;
 
 public class Context {
-    IStrategy mStrategy;
+	IStrategy mStrategy;
 
-    public Context(){}
+	public Context() {
+	}
 
-    public void execute() {
-        this.mStrategy.performAlgorithm();
-    }
+	public void execute() {
+		this.mStrategy.performAlgorithm();
+	}
+
+	public void setStrategy(IStrategy strategy) {
+		this.mStrategy = strategy;
+	}
 }
